@@ -1,0 +1,12 @@
+<!-- app.component.html -->
+
+<nav class="navbar">
+    <a routerLink="/" routerLinkActive="active" (click)="display=true">Home</a>
+    <a routerLink="/game/6" routerLinkActive="active" (click)="toggleDisplay()">Memory Game 6</a>
+    <a routerLink="/game/12" routerLinkActive="active" (click)="toggleDisplay( )">Memory Game 12</a>
+  </nav>
+
+  <h1 *ngIf="display">Game</h1>
+
+
+<router-outlet></router-outlet>

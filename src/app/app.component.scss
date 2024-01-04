@@ -1,0 +1,53 @@
+/* app.component.css or your global styles file */
+
+
+  .navbar {
+    background-color: #575d60;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #2980b9;
+  }
+  
+  .active {
+    background-color: #2980b9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #3498db;
+    margin: 20px 0;
+  }
+  
+  div {
+    text-align: center;
+  }
+  
+  a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  a.active {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  a:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  

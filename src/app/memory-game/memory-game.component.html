@@ -1,0 +1,20 @@
+<!-- memory-game.component.html -->
+
+
+<div class="container">
+<div [ngClass]="{'six-cards':numCards===6, 'twelve-cards': numCards===12}">
+    <div *ngFor="let card of cards; let i = index" class="memory-card" (click)="flipCard(i)">
+      <div *ngIf="card.isFlipped || matchedPairs.includes(card)" class="card flipped" [ngClass]="{'disappear':card.isMatched}">
+        <img [src]="card.imagePath" alt="Card Image">
+      </div>
+      <div *ngIf="!card.isFlipped && !matchedPairs.includes(card)" class="card"></div>
+    </div>
+</div>
+
+<div class="resetandbutton">
+  <button (click)="resetGame()">Reset Game</button>
+  <p>Moves: {{ moves }} &nbsp;&nbsp;&nbsp;&nbsp;   Misses: {{ misses }}</p>
+ 
+</div>
+
+</div>
